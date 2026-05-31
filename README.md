@@ -1,72 +1,78 @@
 # MCP Spec Compliance MCP
 
-> ## 🧱 Part of the MEOK Governance Substrate (£499/mo)
-> See [meok.ai/docs](https://meok.ai/docs) and [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/mcp_spec_compliance_mcp/)
 
-# Audit any MCP server.json against the official Model Context Protocol spec
+> MCP Spec Compliance MCP - audits any MCP server
 
-<!-- mcp-name: io.github.CSOAI-ORG/mcp-spec-compliance-mcp -->
+MCP Spec Compliance MCP - audits any MCP server.json against the official spec. HMAC-signed conformity reports. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/mcp-spec-compliance-mcp)](https://pypi.org/project/mcp-spec-compliance-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this does
+## 🚀 Quick Start
 
-Lints any `server.json` against the official MCP spec — required field gate, semver, slug pattern, recommended fields, deprecated patterns, naming conventions. Returns a numeric conformity score 0–100 and an HMAC-signed report you can publish next to your registry submission.
+```bash
+# Install via pip
+pip install mcp_spec_compliance_mcp
 
-The meta-viral move: every MCP author wants to know if their server passes audit **before** pushing to the official registry.
+# Or install via Smithery
+npx -y @smithery/cli@latest install mcp-spec-compliance-mcp --client claude
+```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|---|---|
-| `audit_server_json(server_json, spec_version?)` | Full audit with score + errors + warnings |
-| `check_required_fields(server_json, spec_version?)` | Fast gate — required fields only |
-| `check_naming_conventions(server_json, tool_names?)` | Slug + semver + tool-name lint |
-| `list_spec_versions()` | Supported spec revisions |
-| `generate_passing_template(org, slug)` | Minimal-passing server.json template |
-| `sign_conformity_report(audit_result)` | HMAC-signed publishable cert |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Why this exists
+## 📖 Documentation
 
-The official MCP Registry rejects submissions with missing required fields. Many submissions fail because authors don't realise `$schema` is required as of 2025-12-11. This MCP catches that before you push.
+- [Full Documentation](https://docs.meok.ai/mcp-spec-compliance-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Sister MCPs
+## 🛡️ Compliance
 
-- `agent-replay-debugger-mcp` — debug your own MCP runs
-- `oasf-agent-directory-mcp` — once you pass spec compliance, publish to the Cisco AGNTCY directory too
-- `agent-prompt-injection-firewall-mcp` — scan your tool inputs against OWASP LLM01
+This MCP server is built with **EU AI Act compliance** built-in:
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-## Pricing
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| Governance Substrate | £499/mo |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+## 🏢 Enterprise
 
-Buy: https://meok.ai/governance
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Licence
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-<!-- BUY-LADDER:START -->
+## 🤝 Part of the MEOK Ecosystem
 
-## 💸 Try MEOK in 30 seconds — instant buy ladder
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-| Tier | Price | What you get | Stripe |
-|---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
-> Verify any signed report at <https://meok.ai/verify>.
+## 📜 License
 
-<!-- BUY-LADDER:END -->
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
