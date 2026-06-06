@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp-spec-compliance-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "MCP Spec Compliance MCP — audits any MCP server.json against the official Model Context Protocol spec (2025-12-11). HMAC-signed conformity reports. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }

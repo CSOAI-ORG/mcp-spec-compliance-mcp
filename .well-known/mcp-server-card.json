@@ -1,0 +1,31 @@
+{
+  "name": "mcp-spec-compliance-mcp",
+  "title": "Mcp Spec Compliance Mcp",
+  "description": "MCP Spec Compliance MCP \u2014 audits any MCP server.json against the official Model Context Protocol spec (2025-12-11). HMAC-signed conformity reports. By MEOK AI Labs.",
+  "version": "1.0.1",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "audit_server_json"
+    },
+    {
+      "name": "check_required_fields"
+    },
+    {
+      "name": "check_naming_conventions"
+    },
+    {
+      "name": "list_spec_versions"
+    },
+    {
+      "name": "generate_passing_template"
+    },
+    {
+      "name": "sign_conformity_report"
+    }
+  ]
+}

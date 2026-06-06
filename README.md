@@ -1,3 +1,5 @@
+mcp-name: io.github.CSOAI-ORG/mcp-spec-compliance-mcp
+
 # MCP Spec Compliance MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
@@ -76,3 +78,29 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 <p align="center">
   <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
 </p>
+<!-- BUY-LADDER:END -->
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "mcp-spec-compliance-mcp": {
+      "command": "uvx",
+      "args": ["mcp-spec-compliance-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install mcp-spec-compliance-mcp` then run the `mcp-spec-compliance-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `audit_server_json` to …"
+- "Use `check_required_fields` to …"
+- "Use `check_naming_conventions` to …"

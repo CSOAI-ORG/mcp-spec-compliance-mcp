@@ -1,0 +1,22 @@
+# mcp-spec-compliance-mcp
+
+> MCP Spec Compliance MCP — audits any MCP server.json against the official Model Context Protocol spec (2025-12-11). HMAC-signed conformity reports. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- audit_server_json
+- check_required_fields
+- check_naming_conventions
+- list_spec_versions
+- generate_passing_template
+- sign_conformity_report
+
+## Install
+```
+pip install mcp-spec-compliance-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/mcp-spec-compliance-mcp/
+- Docs: https://meok.ai
