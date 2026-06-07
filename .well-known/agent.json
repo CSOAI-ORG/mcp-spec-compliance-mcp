@@ -1,0 +1,77 @@
+{
+  "name": "mcp-spec-compliance-mcp",
+  "description": "MCP Spec Compliance MCP \u2014 audits any MCP server.json against the official Model Context Protocol",
+  "url": "https://proofof.ai/scorecard/mcp-spec-compliance-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "audit_server_json",
+      "name": "Audit Server Json",
+      "description": "audit_server_json via mcp-spec-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_required_fields",
+      "name": "Check Required Fields",
+      "description": "check_required_fields via mcp-spec-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_naming_conventions",
+      "name": "Check Naming Conventions",
+      "description": "check_naming_conventions via mcp-spec-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_spec_versions",
+      "name": "List Spec Versions",
+      "description": "list_spec_versions via mcp-spec-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_passing_template",
+      "name": "Generate Passing Template",
+      "description": "generate_passing_template via mcp-spec-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_conformity_report",
+      "name": "Sign Conformity Report",
+      "description": "sign_conformity_report via mcp-spec-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

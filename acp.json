@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "mcp-spec-compliance-mcp",
+    "description": "MCP Spec Compliance MCP \u2014 audits any MCP server.json against the official Model Context Protocol",
+    "version": "1.0.1",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "mcp-spec-compliance-mcp"
+      }
+    ],
+    "capabilities": [
+      "audit_server_json",
+      "check_required_fields",
+      "check_naming_conventions",
+      "list_spec_versions",
+      "generate_passing_template",
+      "sign_conformity_report"
+    ]
+  }
+}
