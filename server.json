@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/mcp-spec-compliance-mcp",
-  "version": "1.0.0",
-  "description": "MCP Spec Compliance MCP \u2014 audits any MCP server.json against the official Model Context Protocol",
+  "version": "1.0.1",
+  "description": "MCP Spec Compliance MCP — audits any MCP server.json against the official Model Context Protocol",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/mcp-spec-compliance-mcp",
     "source": "github"
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "mcp-spec-compliance-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
