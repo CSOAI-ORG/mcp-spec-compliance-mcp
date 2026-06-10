@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "mcp-spec-compliance-mcp": {
+      "command": "uvx",
+      "args": [
+        "mcp-spec-compliance-mcp"
+      ]
+    }
+  }
+}
