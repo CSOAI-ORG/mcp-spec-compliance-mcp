@@ -1,0 +1,128 @@
+{
+  "name": "Mcp Spec Compliance Mcp",
+  "version": "1.0.1",
+  "url": "https://mcp.meok.ai/mcp-spec-compliance-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MCP Spec Compliance MCP — audits any MCP server.json against the official Model Context Protocol spec (2025-12-11). HMAC-signed conformity reports. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "audit_server_json",
+      "name": "Audit Server Json",
+      "description": "Audit Server Json — a tool of the mcp-spec-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_required_fields",
+      "name": "Check Required Fields",
+      "description": "Check Required Fields — a tool of the mcp-spec-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_naming_conventions",
+      "name": "Check Naming Conventions",
+      "description": "Check Naming Conventions — a tool of the mcp-spec-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_spec_versions",
+      "name": "List Spec Versions",
+      "description": "List Spec Versions — a tool of the mcp-spec-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "generate_passing_template",
+      "name": "Generate Passing Template",
+      "description": "Generate Passing Template — a tool of the mcp-spec-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_conformity_report",
+      "name": "Sign Conformity Report",
+      "description": "Sign Conformity Report — a tool of the mcp-spec-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "mcp-spec-compliance-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
