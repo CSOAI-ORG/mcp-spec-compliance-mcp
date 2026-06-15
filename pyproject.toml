@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcp-spec-compliance-mcp"
-version = "1.0.1"
+version = "1.0.2"
 description = "MCP Spec Compliance MCP — audits any MCP server.json against the official Model Context Protocol spec (2025-12-11). HMAC-signed conformity reports. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
@@ -28,3 +28,22 @@ mcp-spec-compliance-mcp = "server:main"
 
 [tool.setuptools]
 py-modules = ["server"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_Configs = true
+disallow_untyped_defs = true
+
